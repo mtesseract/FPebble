@@ -1,3 +1,17 @@
+FPebble
+=======
+
+This is a clone of the original PebbleJS repository, including a very
+rudimentary PureScript binding plus a small demo application.
+
+The PureScript binding is contained in src/PureScript/src/Pebble.
+
+The demo application is contained in src/PureScript/src/Main.purs.
+
+The Makefile contains some helpful targets.
+
+What follows is the original PebbleJS README.
+
 Pebble.js
 =========
 
