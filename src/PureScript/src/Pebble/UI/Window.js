@@ -28,11 +28,13 @@ exports._newWindow = function () {
     return new UI.Window();
 };
 
-exports._windowAdd = function (elementClass) {
-    return (function (w) {
-        return (function (e) {
-            return (function () {
-                w.add(e);
+exports._windowAdd = function (winClass) {
+    return (function (elementClass) {
+        return (function (w) {
+            return (function (e) {
+                return (function () {
+                    w.add(e);
+                });
             });
         });
     });
@@ -42,6 +44,22 @@ exports._setBackgroundColor = function (windowClass) {
     return (function (card) {
         return (function (s) {
             return (function () { card.state.backgroundColor = s; });
+        });
+    });
+};
+
+exports._setColor = function (windowClass) {
+    return (function (card) {
+        return (function (s) {
+            return (function () { card.state.Color = s; });
+        });
+    });
+};
+
+exports._setTitle = function (cardClass) {
+    return (function (card) {
+        return (function (s) {
+            return (function () { card.state.title = s; });
         });
     });
 };

@@ -15,14 +15,6 @@ exports._newCard = function() {
     return new UI.Card({});
 };
 
-exports._setTitle = function (cardClass) {
-    return (function (card) {
-        return (function (s) {
-            return (function () { card.state.title = s; });
-        });
-    });
-};
-
 exports._setSubtitle = function (cardClass) {
     return (function (card) {
         return (function (s) {
