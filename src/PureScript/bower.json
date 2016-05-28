@@ -1,5 +1,5 @@
 {
-  "name": "PureScript",
+  "name": "fpebble",
   "ignore": [
     "**/.*",
     "node_modules",
